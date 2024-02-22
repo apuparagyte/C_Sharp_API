@@ -35,6 +35,7 @@ namespace DemoFakeAPI
             Service service = new Service();
             RestResponse response = service.GETHobbitSeries();
             Assert.IsNotNull(response);
+            Assert.IsNotNull(response);
             Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
         }
     }
